@@ -2,7 +2,7 @@ from tkinter import *
 import sqlite3
 import tkinter.messagebox
 
-conn = sqlite3.connect("C:\\Users\\hp\\Desktop\\Supermarket_App_Gp1\\Database\\store.db")
+conn = sqlite3.connect("Database\\store.db")
 c = conn.cursor()
 
 result= c.execute("SELECT max(id) from inventory")
